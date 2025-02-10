@@ -17,6 +17,9 @@ interface PlayerInterface extends JsonSerializable
     public string $email {
         get;
     }
+    public string $birthday {
+        get;
+    }
 
     public static function getByCode(string $code) : ?static;
 

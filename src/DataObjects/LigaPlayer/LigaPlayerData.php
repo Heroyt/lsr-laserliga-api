@@ -12,6 +12,7 @@ class LigaPlayerData
     public string $code;
     public ?int $arena;
     public string $email;
+    public ?\DateTimeInterface $birthday;
     public LigaPlayerStats $stats;
     /** @var LigaPlayerConnection[] */
     public array $connections = [];
