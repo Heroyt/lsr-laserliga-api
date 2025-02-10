@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Lsr\LaserLiga;
 
+use DateTimeInterface;
 use JsonSerializable;
 
 interface PlayerInterface extends JsonSerializable
@@ -17,7 +18,7 @@ interface PlayerInterface extends JsonSerializable
     public string $email {
         get;
     }
-    public string $birthday {
+    public ?DateTimeInterface $birthday {
         get;
     }
 
