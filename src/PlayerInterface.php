@@ -6,7 +6,7 @@ namespace Lsr\LaserLiga;
 use DateTimeInterface;
 use JsonSerializable;
 
-interface PlayerInterface extends JsonSerializable
+interface PlayerInterface extends JsonSerializable, ModelInterface
 {
 
     public string $code {
